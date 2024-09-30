@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Sign up form</title>
+</head>
+<body>
+<div class="image">
+  <img src="leafy background.jpg" alt="Leafy background">
+  <div class="img-description">
+    <p class="img-info">Photo by Halie West on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
+  </div>
+  <div class="bar"></div>
+  <div class="logo">
+    <img src="odin-logo.png" alt="logo">
+    <p class="logo-head">ODIN</p>
+  </div>
+</div>
+<div class="sign-up">
+  <div class="top">
+    <div class="message">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started. <br><br> You <i>know</i> you want to.</div>
+  </div>
+  <div class="middle">
+    <h1>Let's do this!</h1>
+    <div id="error"></div>
+    <form id="account-info" action="/" method="get">
+      <fieldset>
+        <div class="form-row">
+          <label for="first-name">First name <input name="first-name" id="first-name" type="text" required></label>
+          <label for="last-name">Last name <input name="last-name" id="last-name" type="text" required></label>
+        </div>
+        <div class="form-row">
+          <label for="email">Email <input name="email" id="email" type="email" required></label>
+          <label for="phone-number">Phone number <input minlength="10" maxlength="10" name="phone-number" id="phone-number" type="tel" required></label>
+        </div>
+        <div class="form-row">
+          <label for="password">Password <input minlength='8' name="password" id="password" type= "password" onkeyup="check();" required></label>
+          <label for="confirm-password">Confirm password <input minlength='8' name="confirm-password" id="confirm-password" type= "password" onkeyup="check();" required>
+          <span id="error"></span>
+          </label>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <div class="bottom">
+    <div class="content">
+      <input class="create" type="submit" form="account-info" value="Create account"/>
+      <div class="log-in">
+        <p>Already have an account? <a class="log-link" href="www.login.com">Log in</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

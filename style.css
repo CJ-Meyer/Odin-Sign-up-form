@@ -1,0 +1,168 @@
+body{
+  font-family: "Baskervville SC", serif;
+  width: 100 vw;
+  height: 100vh;
+  overflow:hidden;
+  display: flex;
+  flex-direction: row;
+  background-color:white;
+  margin: 0;
+}
+
+.image {
+  width: 33.33%; /* Left 1/3 of the screen */
+  height: 100vh; /* Full height */
+  position: relative; /* Needed for absolute positioning inside */
+}
+
+img {
+  width: 100%; /* Ensures image covers the full 1/3 */
+  height: 100%;
+  object-fit: cover; /* Keeps the image proportional */
+}
+
+.img-description {
+  position: absolute; /* Allows positioning inside .image */
+  bottom: 10px; /* Moves it to the bottom */
+  width: 100%; /* Takes up the full width of the container */
+  text-align: center; /* Centers the text */
+}
+
+.img-info {
+  color: white;
+  font-size: 1em;
+}
+
+.logo {
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.bar{
+  background-color: #000000;
+  height: 170px;
+  width: 100%;
+  z-index: 9;
+  position: absolute;
+  top: 31%;
+  opacity: 70%;
+}
+
+.logo-head{
+  font-size: 60px;
+  color: white;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  scale: 75%;
+}
+
+a{
+  color: white;
+}
+
+
+.message {
+  padding: 40px;
+  height: 33.33vh;
+  font-size: 2em;
+  text-align: center; /* This will center the text horizontally */
+  display: block; /* Ensures normal block-level behavior */
+  line-height: 1.5em; /* Optional: Adjusts line height for better readability */
+  margin: auto; /* Optional: vertically center */
+}
+
+
+.top, .bottom{
+  background-color: #f0f0f0;
+}
+
+.sign-up {
+  width: 66.66%;
+  display: flex;
+  flex-direction: column;
+}
+.top, .middle, .bottom {
+  height: 33.33vh; /* 1/3 of the viewport height */
+}
+
+input:focus{
+  outline: none;
+}
+
+input:focus:valid {
+  border:2px solid rgb(26, 128, 0) ;
+}
+
+input:focus:invalid {
+  border: 2px solid red;
+}
+
+h1{
+  margin-left: 45px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: 20px; /* Adds space between rows */
+  width: 75%;
+  gap:30%;
+  margin-left: 10%;
+}
+
+/* Labels should stack text above input */
+label {
+  display: block; /* Ensures the label behaves as a block element */
+  width: 100%; /* Allows the label to take full width of its parent container */
+  flex: 1; /* Makes labels take equal width */
+  color:rgb(65, 65, 65) ;
+  font-size: large;
+}
+
+label:last-child {
+  margin-right: 0; /* Removes margin from the last label in the row */
+}
+
+input {
+  display: block; /* Ensures the input also behaves as a block element */
+  width: 100%; /* Makes the input take up the full width */
+  box-sizing: border-box; /* Ensures padding is included within the width */
+  margin: 5px 0px 10px 0px;
+  font-size: large;
+  border-radius: 5px;
+}
+fieldset{
+  border: none;
+}
+
+.log-link{
+  color: #596D48;
+  text-decoration: none;
+  font-weight: bold;
+}
+.create{
+  background-color: #596D48;
+  padding: 12px;
+  width: 23%;
+  color: white;
+  font-size: large;
+  border-radius: 12px;
+  border: none;
+}
+.content{
+  margin: 50px;
+}
+
+.log-in{
+  font-size: large;
+}
